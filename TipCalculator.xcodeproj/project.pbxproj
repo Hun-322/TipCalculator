@@ -17,6 +17,7 @@
 		540B33B92C4D69EF002F6F7D /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33B82C4D69EF002F6F7D /* TipCalculatorUITests.swift */; };
 		540B33BB2C4D69EF002F6F7D /* TipCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33BA2C4D69EF002F6F7D /* TipCalculatorUITestsLaunchTests.swift */; };
 		540B33C92C4D705E002F6F7D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 540B33C82C4D705E002F6F7D /* SnapKit */; };
+		540B33CC2C4D7155002F6F7D /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 540B33CB2C4D7155002F6F7D /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540B33CC2C4D7155002F6F7D /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +168,9 @@
 				540B33AC2C4D69EF002F6F7D /* PBXTargetDependency */,
 			);
 			name = TipCalculatorTests;
+			packageProductDependencies = (
+				540B33CB2C4D7155002F6F7D /* SnapshotTesting */,
+			);
 			productName = TipCalculatorTests;
 			productReference = 540B33AA2C4D69EF002F6F7D /* TipCalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -222,6 +227,7 @@
 			mainGroup = 540B338B2C4D69EE002F6F7D;
 			packageReferences = (
 				540B33C72C4D705E002F6F7D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				540B33CA2C4D7155002F6F7D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 540B33952C4D69EE002F6F7D /* Products */;
 			projectDirPath = "";
@@ -633,6 +639,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		540B33CA2C4D7155002F6F7D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -640,6 +654,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 540B33C72C4D705E002F6F7D /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		540B33CB2C4D7155002F6F7D /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 540B33CA2C4D7155002F6F7D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
