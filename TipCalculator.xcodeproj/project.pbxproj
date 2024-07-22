@@ -27,6 +27,7 @@
 		540B33E12C4E0DFD002F6F7D /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E02C4E0DFD002F6F7D /* UIColor+.swift */; };
 		540B33E42C4E3052002F6F7D /* LabelFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E32C4E3052002F6F7D /* LabelFactor.swift */; };
 		540B33E62C4E4B3A002F6F7D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E52C4E4B3A002F6F7D /* UIView+.swift */; };
+		540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E72C4E70F5002F6F7D /* AmountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		540B33E02C4E0DFD002F6F7D /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		540B33E32C4E3052002F6F7D /* LabelFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactor.swift; sourceTree = "<group>"; };
 		540B33E52C4E4B3A002F6F7D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		540B33E72C4E70F5002F6F7D /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				540B33D32C4D7B86002F6F7D /* BillInputView.swift */,
 				540B33D52C4D7BAC002F6F7D /* TipInputView.swift */,
 				540B33D72C4D7BC1002F6F7D /* SplitInputView.swift */,
+				540B33E72C4E70F5002F6F7D /* AmountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */,
 				540B339C2C4D69EE002F6F7D /* CalculatorVC.swift in Sources */,
 				540B33D02C4D7A98002F6F7D /* LogoView.swift in Sources */,
 				540B33D42C4D7B86002F6F7D /* BillInputView.swift in Sources */,
