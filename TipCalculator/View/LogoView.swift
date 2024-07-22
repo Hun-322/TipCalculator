@@ -25,20 +25,18 @@ class LogoView: UIView {
         return label
     }()
     
-    private let bottmLabel: UILabel = {
-        let label = LabelFactor.build(
+    private let bottomLabel: UILabel = {
+        LabelFactor.build(
             text: "계산기입니다",
             font: ThemeFont.demibold(ofSize: 18),
             textAlignment: .left
         )
-        
-        return label
     }()
     
     private lazy var vStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
             topLabel,
-            bottmLabel
+            bottomLabel
         ])
         stackView.axis = .vertical
         stackView.spacing = -4
