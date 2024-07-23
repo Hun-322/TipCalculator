@@ -29,6 +29,7 @@
 		540B33E62C4E4B3A002F6F7D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E52C4E4B3A002F6F7D /* UIView+.swift */; };
 		540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E72C4E70F5002F6F7D /* AmountView.swift */; };
 		540B33EB2C4F826B002F6F7D /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33EA2C4F826B002F6F7D /* Tip.swift */; };
+		540B33ED2C4F82C2002F6F7D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33EC2C4F82C2002F6F7D /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		540B33E52C4E4B3A002F6F7D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		540B33E72C4E70F5002F6F7D /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		540B33EA2C4F826B002F6F7D /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		540B33EC2C4F82C2002F6F7D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				540B33D52C4D7BAC002F6F7D /* TipInputView.swift */,
 				540B33D72C4D7BC1002F6F7D /* SplitInputView.swift */,
 				540B33E72C4E70F5002F6F7D /* AmountView.swift */,
+				540B33EC2C4F82C2002F6F7D /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				540B33EB2C4F826B002F6F7D /* Tip.swift in Sources */,
 				540B33D82C4D7BC1002F6F7D /* SplitInputView.swift in Sources */,
 				540B33D62C4D7BAC002F6F7D /* TipInputView.swift in Sources */,
+				540B33ED2C4F82C2002F6F7D /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
