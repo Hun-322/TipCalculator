@@ -26,7 +26,7 @@ class LogoView: UIView {
     }()
     
     private let bottomLabel: UILabel = {
-        LabelFactor.build(
+        LabelFactory.build(
             text: "계산기입니다",
             font: ThemeFont.demibold(ofSize: 18),
             textAlignment: .left

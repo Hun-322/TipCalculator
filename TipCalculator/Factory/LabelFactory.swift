@@ -1,5 +1,5 @@
 //
-//  LabelFactor.swift
+//  LabelFactory.swift
 //  TipCalculator
 //
 //  Created by KSH on 7/22/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct LabelFactor {
+struct LabelFactory {
     
     static func build(
         text: String?,

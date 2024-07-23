@@ -13,7 +13,7 @@ class AmountView: UIView {
     private let textAlignment: NSTextAlignment
     
     private lazy var titleLabel: UILabel = {
-        LabelFactor.build(
+        LabelFactory.build(
             text: title,
             font: ThemeFont.regular(ofSize: 18),
             textColor: ThemeColor.text,

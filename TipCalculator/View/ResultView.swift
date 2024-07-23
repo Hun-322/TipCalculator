@@ -10,7 +10,7 @@ import UIKit
 class ResultView: UIView {
     
     private let headerLabel: UILabel = {
-        LabelFactor.build(
+        LabelFactory.build(
             text: "1인당 총액",
             font: ThemeFont.demibold(ofSize: 18)
         )

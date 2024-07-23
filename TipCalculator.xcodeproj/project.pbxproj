@@ -25,7 +25,7 @@
 		540B33DC2C4E0DB7002F6F7D /* themeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33DB2C4E0DB7002F6F7D /* themeColor.swift */; };
 		540B33DE2C4E0DBF002F6F7D /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33DD2C4E0DBF002F6F7D /* ThemeFont.swift */; };
 		540B33E12C4E0DFD002F6F7D /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E02C4E0DFD002F6F7D /* UIColor+.swift */; };
-		540B33E42C4E3052002F6F7D /* LabelFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E32C4E3052002F6F7D /* LabelFactor.swift */; };
+		540B33E42C4E3052002F6F7D /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E32C4E3052002F6F7D /* LabelFactory.swift */; };
 		540B33E62C4E4B3A002F6F7D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E52C4E4B3A002F6F7D /* UIView+.swift */; };
 		540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E72C4E70F5002F6F7D /* AmountView.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +68,7 @@
 		540B33DB2C4E0DB7002F6F7D /* themeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = themeColor.swift; sourceTree = "<group>"; };
 		540B33DD2C4E0DBF002F6F7D /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		540B33E02C4E0DFD002F6F7D /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		540B33E32C4E3052002F6F7D /* LabelFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactor.swift; sourceTree = "<group>"; };
+		540B33E32C4E3052002F6F7D /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		540B33E52C4E4B3A002F6F7D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		540B33E72C4E70F5002F6F7D /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,7 +196,7 @@
 		540B33E22C4E303F002F6F7D /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				540B33E32C4E3052002F6F7D /* LabelFactor.swift */,
+				540B33E32C4E3052002F6F7D /* LabelFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -349,7 +349,7 @@
 				540B33E12C4E0DFD002F6F7D /* UIColor+.swift in Sources */,
 				540B33982C4D69EE002F6F7D /* AppDelegate.swift in Sources */,
 				540B339A2C4D69EE002F6F7D /* SceneDelegate.swift in Sources */,
-				540B33E42C4E3052002F6F7D /* LabelFactor.swift in Sources */,
+				540B33E42C4E3052002F6F7D /* LabelFactory.swift in Sources */,
 				540B33DE2C4E0DBF002F6F7D /* ThemeFont.swift in Sources */,
 				540B33DC2C4E0DB7002F6F7D /* themeColor.swift in Sources */,
 				540B33E62C4E4B3A002F6F7D /* UIView+.swift in Sources */,
