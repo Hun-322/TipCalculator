@@ -11,7 +11,7 @@ class ResultView: UIView {
     
     private let headerLabel: UILabel = {
         LabelFactory.build(
-            text: "1인당 총액",
+            text: "Total p/person",
             font: ThemeFont.demibold(ofSize: 18)
         )
     }()
@@ -53,11 +53,11 @@ class ResultView: UIView {
     private lazy var HStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
             AmountView(
-                title: "총 청구서",
+                title: "Total bill",
                 textAlignment: .left),
             UIView(),
             AmountView(
-                title: "총 팁",
+                title: "Total tip",
                 textAlignment: .right),
         ])
         stackView.axis = .horizontal
