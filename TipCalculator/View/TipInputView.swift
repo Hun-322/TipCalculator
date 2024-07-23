@@ -34,9 +34,10 @@ class TipInputView: UIView {
     }()
     
     private lazy var customTipButton: UIButton = {
-        let button = buildTipButton(tip: .twentyPercent)
-        button.setTitle("팁 설정", for: .normal)
+        let button = UIButton()
+        button.setTitle("Custom tip", for: .normal)
         button.titleLabel?.font = ThemeFont.bold(ofSize: 20)
+        button.backgroundColor = ThemeColor.primary
         button.addCornerRadius(radius: 8.0)
         return button
     }()
@@ -63,7 +64,6 @@ class TipInputView: UIView {
         stackView.distribution = .fillEqually
         return stackView
     }()
-    
     
     init() {
         super.init(frame: .zero)
