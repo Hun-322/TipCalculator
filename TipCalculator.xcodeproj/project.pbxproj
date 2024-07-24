@@ -35,6 +35,7 @@
 		54E998762C50D70D00C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E998752C50D70D00C79EB8 /* CombineCocoa */; };
 		54E998792C50D73400C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E998782C50D73400C79EB8 /* CombineCocoa */; };
 		54E9987B2C50D73C00C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E9987A2C50D73C00C79EB8 /* CombineCocoa */; };
+		54E9987D2C50DBA500C79EB8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9987C2C50DBA500C79EB8 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		540B33EC2C4F82C2002F6F7D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		54E998702C50245000C79EB8 /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
 		54E998722C50259B00C79EB8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		54E9987C2C50DBA500C79EB8 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			children = (
 				540B33E02C4E0DFD002F6F7D /* UIColor+.swift */,
 				540B33E52C4E4B3A002F6F7D /* UIView+.swift */,
+				54E9987C2C50DBA500C79EB8 /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */,
 				540B339C2C4D69EE002F6F7D /* CalculatorVC.swift in Sources */,
 				540B33D02C4D7A98002F6F7D /* LogoView.swift in Sources */,
+				54E9987D2C50DBA500C79EB8 /* String+.swift in Sources */,
 				540B33D42C4D7B86002F6F7D /* BillInputView.swift in Sources */,
 				540B33D22C4D7B6D002F6F7D /* ResultView.swift in Sources */,
 				540B33E12C4E0DFD002F6F7D /* UIColor+.swift in Sources */,
