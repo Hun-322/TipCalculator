@@ -30,6 +30,11 @@
 		540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33E72C4E70F5002F6F7D /* AmountView.swift */; };
 		540B33EB2C4F826B002F6F7D /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33EA2C4F826B002F6F7D /* Tip.swift */; };
 		540B33ED2C4F82C2002F6F7D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B33EC2C4F82C2002F6F7D /* HeaderView.swift */; };
+		54E998712C50245000C79EB8 /* CalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E998702C50245000C79EB8 /* CalculatorVM.swift */; };
+		54E998732C50259B00C79EB8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E998722C50259B00C79EB8 /* Result.swift */; };
+		54E998762C50D70D00C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E998752C50D70D00C79EB8 /* CombineCocoa */; };
+		54E998792C50D73400C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E998782C50D73400C79EB8 /* CombineCocoa */; };
+		54E9987B2C50D73C00C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E9987A2C50D73C00C79EB8 /* CombineCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,8 @@
 		540B33E72C4E70F5002F6F7D /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		540B33EA2C4F826B002F6F7D /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		540B33EC2C4F82C2002F6F7D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		54E998702C50245000C79EB8 /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
+		54E998722C50259B00C79EB8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E998762C50D70D00C79EB8 /* CombineCocoa in Frameworks */,
 				540B33C92C4D705E002F6F7D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E998792C50D73400C79EB8 /* CombineCocoa in Frameworks */,
 				540B33CC2C4D7155002F6F7D /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E9987B2C50D73C00C79EB8 /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +121,7 @@
 				540B33AD2C4D69EF002F6F7D /* TipCalculatorTests */,
 				540B33B72C4D69EF002F6F7D /* TipCalculatorUITests */,
 				540B33952C4D69EE002F6F7D /* Products */,
+				54E998772C50D73300C79EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,12 +138,13 @@
 		540B33962C4D69EE002F6F7D /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				540B33D92C4D7C0D002F6F7D /* App */,
 				540B33E92C4F8263002F6F7D /* Model */,
+				540B33CD2C4D7A7A002F6F7D /* View */,
+				54E9986F2C50243800C79EB8 /* ViewModel */,
 				540B33E22C4E303F002F6F7D /* Factory */,
 				540B33DF2C4E0DED002F6F7D /* Extensions */,
 				540B33DA2C4E0DAB002F6F7D /* Config */,
-				540B33D92C4D7C0D002F6F7D /* App */,
-				540B33CD2C4D7A7A002F6F7D /* View */,
 				540B339B2C4D69EE002F6F7D /* CalculatorVC.swift */,
 				540B33A02C4D69EF002F6F7D /* Assets.xcassets */,
 				540B33A22C4D69EF002F6F7D /* LaunchScreen.storyboard */,
@@ -211,8 +223,24 @@
 			isa = PBXGroup;
 			children = (
 				540B33EA2C4F826B002F6F7D /* Tip.swift */,
+				54E998722C50259B00C79EB8 /* Result.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		54E9986F2C50243800C79EB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54E998702C50245000C79EB8 /* CalculatorVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54E998772C50D73300C79EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +261,7 @@
 			name = TipCalculator;
 			packageProductDependencies = (
 				540B33C82C4D705E002F6F7D /* SnapKit */,
+				54E998752C50D70D00C79EB8 /* CombineCocoa */,
 			);
 			productName = TipCalculator;
 			productReference = 540B33942C4D69EE002F6F7D /* TipCalculator.app */;
@@ -254,6 +283,7 @@
 			name = TipCalculatorTests;
 			packageProductDependencies = (
 				540B33CB2C4D7155002F6F7D /* SnapshotTesting */,
+				54E998782C50D73400C79EB8 /* CombineCocoa */,
 			);
 			productName = TipCalculatorTests;
 			productReference = 540B33AA2C4D69EF002F6F7D /* TipCalculatorTests.xctest */;
@@ -273,6 +303,9 @@
 				540B33B62C4D69EF002F6F7D /* PBXTargetDependency */,
 			);
 			name = TipCalculatorUITests;
+			packageProductDependencies = (
+				54E9987A2C50D73C00C79EB8 /* CombineCocoa */,
+			);
 			productName = TipCalculatorUITests;
 			productReference = 540B33B42C4D69EF002F6F7D /* TipCalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -312,6 +345,7 @@
 			packageReferences = (
 				540B33C72C4D705E002F6F7D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				540B33CA2C4D7155002F6F7D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				54E998742C50D70D00C79EB8 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 			);
 			productRefGroup = 540B33952C4D69EE002F6F7D /* Products */;
 			projectDirPath = "";
@@ -355,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E998732C50259B00C79EB8 /* Result.swift in Sources */,
+				54E998712C50245000C79EB8 /* CalculatorVM.swift in Sources */,
 				540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */,
 				540B339C2C4D69EE002F6F7D /* CalculatorVC.swift in Sources */,
 				540B33D02C4D7A98002F6F7D /* LogoView.swift in Sources */,
@@ -745,6 +781,14 @@
 				minimumVersion = 1.17.2;
 			};
 		};
+		54E998742C50D70D00C79EB8 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -757,6 +801,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 540B33CA2C4D7155002F6F7D /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		54E998752C50D70D00C79EB8 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E998742C50D70D00C79EB8 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		54E998782C50D73400C79EB8 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E998742C50D70D00C79EB8 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		54E9987A2C50D73C00C79EB8 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E998742C50D70D00C79EB8 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
