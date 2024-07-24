@@ -36,6 +36,7 @@
 		54E998792C50D73400C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E998782C50D73400C79EB8 /* CombineCocoa */; };
 		54E9987B2C50D73C00C79EB8 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 54E9987A2C50D73C00C79EB8 /* CombineCocoa */; };
 		54E9987D2C50DBA500C79EB8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9987C2C50DBA500C79EB8 /* String+.swift */; };
+		54E9987F2C50F93700C79EB8 /* UIResponder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9987E2C50F93700C79EB8 /* UIResponder+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		54E998702C50245000C79EB8 /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
 		54E998722C50259B00C79EB8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		54E9987C2C50DBA500C79EB8 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		54E9987E2C50F93700C79EB8 /* UIResponder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				540B33E02C4E0DFD002F6F7D /* UIColor+.swift */,
 				540B33E52C4E4B3A002F6F7D /* UIView+.swift */,
 				54E9987C2C50DBA500C79EB8 /* String+.swift */,
+				54E9987E2C50F93700C79EB8 /* UIResponder+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E9987F2C50F93700C79EB8 /* UIResponder+.swift in Sources */,
 				54E998732C50259B00C79EB8 /* Result.swift in Sources */,
 				54E998712C50245000C79EB8 /* CalculatorVM.swift in Sources */,
 				540B33E82C4E70F5002F6F7D /* AmountView.swift in Sources */,
