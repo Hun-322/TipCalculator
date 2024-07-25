@@ -46,7 +46,7 @@ class CalculatorVC: UIViewController {
     private lazy var logoViewTapPublisher: AnyPublisher<Void, Never> = {
         let tapGesture = UITapGestureRecognizer(target: self, action: nil)
         tapGesture.numberOfTapsRequired = 2 // 터치가 두번 입력되면 실행
-        view.addGestureRecognizer(tapGesture)
+        logoView.addGestureRecognizer(tapGesture)
         return tapGesture.tapPublisher.flatMap { _ in
             Just(())
         }.eraseToAnyPublisher()
@@ -74,8 +74,10 @@ class CalculatorVC: UIViewController {
             resultView.configure(result: result)
         }.store(in: &cancellabels)
         
-        output.resultCalculatorPublisher.sink { _ in
-            print("hey, reset the form please!")
+        output.resetCalculatorPublisher.sink { [unowned self] _ in
+            billInputView.reset()
+            tipInputView.reset()
+            splitInputView.reset()
         }.store(in: &cancellabels)
     }
     
