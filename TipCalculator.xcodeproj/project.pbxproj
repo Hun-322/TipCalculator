@@ -39,6 +39,7 @@
 		54E9987F2C50F93700C79EB8 /* UIResponder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9987E2C50F93700C79EB8 /* UIResponder+.swift */; };
 		54E998812C520BEB00C79EB8 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E998802C520BEB00C79EB8 /* Double+.swift */; };
 		54E998862C52477600C79EB8 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E998852C52477600C79EB8 /* AudioPlayerService.swift */; };
+		54E998872C52541300C79EB8 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54E998832C5246ED00C79EB8 /* click.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -393,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E998872C52541300C79EB8 /* click.m4a in Resources */,
 				540B33A42C4D69EF002F6F7D /* LaunchScreen.storyboard in Resources */,
 				540B33A12C4D69EF002F6F7D /* Assets.xcassets in Resources */,
 			);
