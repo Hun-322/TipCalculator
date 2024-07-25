@@ -38,6 +38,7 @@
 		54E9987D2C50DBA500C79EB8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9987C2C50DBA500C79EB8 /* String+.swift */; };
 		54E9987F2C50F93700C79EB8 /* UIResponder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E9987E2C50F93700C79EB8 /* UIResponder+.swift */; };
 		54E998812C520BEB00C79EB8 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E998802C520BEB00C79EB8 /* Double+.swift */; };
+		54E998862C52477600C79EB8 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E998852C52477600C79EB8 /* AudioPlayerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		54E9987E2C50F93700C79EB8 /* UIResponder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+.swift"; sourceTree = "<group>"; };
 		54E998802C520BEB00C79EB8 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		54E998832C5246ED00C79EB8 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		54E998852C52477600C79EB8 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		540B33962C4D69EE002F6F7D /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				54E998842C52475B00C79EB8 /* Service */,
 				54E998822C5246D700C79EB8 /* Resource */,
 				540B33D92C4D7C0D002F6F7D /* App */,
 				540B33E92C4F8263002F6F7D /* Model */,
@@ -260,6 +263,14 @@
 				540B33A02C4D69EF002F6F7D /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		54E998842C52475B00C79EB8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				54E998852C52477600C79EB8 /* AudioPlayerService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E9987F2C50F93700C79EB8 /* UIResponder+.swift in Sources */,
+				54E998862C52477600C79EB8 /* AudioPlayerService.swift in Sources */,
 				54E998812C520BEB00C79EB8 /* Double+.swift in Sources */,
 				54E998732C50259B00C79EB8 /* Result.swift in Sources */,
 				54E998712C50245000C79EB8 /* CalculatorVM.swift in Sources */,
