@@ -6,31 +6,58 @@
 //
 
 import XCTest
+import Combine
 @testable import TipCalculator
 
 final class TipCalculatorTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // sut -> System Under Test
+    private var sut: CalculatorVM!
+    private var cancellables: Set<AnyCancellable>!
+    private var logoViewTapSubject: PassthroughSubject<Void, Never>!
+    
+    override func setUp() {
+        sut = .init()
+        logoViewTapSubject = .init()
+        cancellables = .init()
+        super.setUp()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
+        sut = nil
+        cancellables = nil
+        logoViewTapSubject = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    //    - 1000원
+    //    - 팁 없음
+    //    - 1명
+    func test_한명이팁을안주는경우() {
+        // given: 필요한 value 세팅
+        let bill: Double = 1000.0
+        let tip: Tip = .none
+        let split: Int = 1
+        let input = buildInput(
+            bill: bill,
+            tip: tip,
+            split: split
+        )
+        // when: 테스트 코드 실행
+        let output = sut.transform(input: input)
+        // then: 결과 확인(출력)
+        output.updateViewPublisher.sink { result in
+            XCTAssertEqual(result.amountPerPerson, 1000.0)
+            XCTAssertEqual(result.totalBill, 1000)
+            XCTAssertEqual(result.totalTip, 0)
+        }.store(in: &cancellables)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    private func buildInput(bill: Double, tip: Tip, split: Int) -> CalculatorVM.Input {
+        return .init(
+            billPublisher: Just(bill).eraseToAnyPublisher(),
+            tipPublisher: Just(tip).eraseToAnyPublisher(),
+            splitPublisher: Just(split).eraseToAnyPublisher(),
+            logoViewTapPublisher: logoViewTapSubject.eraseToAnyPublisher()
+        )
     }
-
 }
