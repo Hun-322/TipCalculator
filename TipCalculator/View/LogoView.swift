@@ -56,6 +56,7 @@ class LogoView: UIView {
     
     init() {
         super.init(frame: .zero)
+        accessibilityIdentifier = ScreenIdentifier.Logoview.logoView.rawValue
         layout()
     }
     
