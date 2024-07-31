@@ -28,6 +28,7 @@ class ResultView: UIView {
             .font: ThemeFont.bold(ofSize: 24)
         ], range: NSMakeRange(0, 1))
         label.attributedText = text
+        label.accessibilityIdentifier = ScreenIdentifier.ResultView.totalAmountPerPersonValueLabel.rawValue
         return label
     }()
     
@@ -53,14 +54,16 @@ class ResultView: UIView {
     private let totalBillView: AmountView = {
         let view = AmountView(
             title: "Total bill",
-            textAlignment: .left)
+            textAlignment: .left,
+            amountLableIdentifier: ScreenIdentifier.ResultView.totalBillValueLabel.rawValue)
         return view
     }()
     
-    private let totaltipView: AmountView = {
+    private let totalTipView: AmountView = {
         let view = AmountView(
             title: "Total tip",
-            textAlignment: .right)
+            textAlignment: .right,
+            amountLableIdentifier: ScreenIdentifier.ResultView.totalTipValueLabel.rawValue)
         return view
     }()
     
@@ -68,7 +71,7 @@ class ResultView: UIView {
         let stackView = UIStackView(arrangedSubviews: [
             totalBillView,
             UIView(),
-            totaltipView,
+            totalTipView,
         ])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
@@ -96,7 +99,7 @@ class ResultView: UIView {
         amountPerPersonLabel.attributedText = text
         
         totalBillView.configure(amount: result.totalBill)
-        totaltipView.configure(amount: result.totalTip)
+        totalTipView.configure(amount: result.totalTip)
         
     }
     
