@@ -39,7 +39,7 @@ class CalculatorScreen {
         app.textFields[ScreenIdentifier.BillInputView.textField.rawValue]
     }
     
-    // TipInputView
+    // TipInpitView
     var tenPercentTipButton: XCUIElement {
         app.buttons[ScreenIdentifier.TipInputView.tenPercentButton.rawValue]
     }
@@ -49,7 +49,7 @@ class CalculatorScreen {
     }
     
     var twentyPercentTipButton: XCUIElement {
-        app.buttons[ScreenIdentifier.TipInputView.twentyPercentTipButton.rawValue]
+        app.buttons[ScreenIdentifier.TipInputView.twentyPercentButton.rawValue]
     }
     
     var customTipButton: XCUIElement {
@@ -57,7 +57,7 @@ class CalculatorScreen {
     }
     
     var customTipAlertTextField: XCUIElement {
-        app.buttons[ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue]
+        app.textFields[ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue]
     }
     
     // SplitInputView
@@ -93,19 +93,18 @@ class CalculatorScreen {
             XCTAssertTrue(customTipAlertTextField.waitForExistence(timeout: 1.0))
             customTipAlertTextField.typeText("\(value)\n")
         }
-        
-        func selectIncrementButton(numberOfTaps: Int) {
-            incrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
-        }
-        
-        func selectDecrementButton(numberOfTaps: Int) {
-            decrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
-        }
-        
-        func doubleTapLogoView() {
-            logoView.tap(withNumberOfTaps: 2, numberOfTouches: 1)
-        }
-        
+    }
+    
+    func selectIncrementButton(numberOfTaps: Int) {
+        incrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
+    }
+    
+    func selectDecrementButton(numberOfTaps: Int) {
+        decrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
+    }
+    
+    func doubleTapLogoView() {
+        logoView.tap(withNumberOfTaps: 2, numberOfTouches: 1)
     }
     
     enum Tip {
@@ -114,4 +113,5 @@ class CalculatorScreen {
         case twentyPercent
         case custom(value: Int)
     }
+    
 }
